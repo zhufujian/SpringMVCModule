@@ -1,0 +1,14 @@
+C:\LLPAY_WORK\Workspaces\Eclipse\SpringMVCModule\SpringMVCModule_core\src\main\java\org\SpringMVCModule_core\domain\User.java
+C:\LLPAY_WORK\Workspaces\Eclipse\SpringMVCModule\SpringMVCModule_core\src\main\java\org\SpringMVCModule_core\RPCservice\UserService.java
+C:\LLPAY_WORK\Workspaces\Eclipse\SpringMVCModule\SpringMVCModule_core\src\main\java\org\SpringMVCModule_core\domain\UserExample.java
+C:\LLPAY_WORK\Workspaces\Eclipse\SpringMVCModule\SpringMVCModule_core\src\main\java\org\SpringMVCModule_core\common\aspect\DubboAspect.java
+C:\LLPAY_WORK\Workspaces\Eclipse\SpringMVCModule\SpringMVCModule_core\src\main\java\org\SpringMVCModule_core\dao\UserMapper.java
+C:\LLPAY_WORK\Workspaces\Eclipse\SpringMVCModule\SpringMVCModule_core\src\main\java\org\SpringMVCModule_core\common\enums\ResultCoreCodeEnum.java
+C:\LLPAY_WORK\Workspaces\Eclipse\SpringMVCModule\SpringMVCModule_core\src\main\java\org\SpringMVCModule_core\common\exceptions\BizException.java
+C:\LLPAY_WORK\Workspaces\Eclipse\SpringMVCModule\SpringMVCModule_core\src\main\java\org\SpringMVCModule_core\RPCservice\BaseService.java
+C:\LLPAY_WORK\Workspaces\Eclipse\SpringMVCModule\SpringMVCModule_core\src\main\java\org\SpringMVCModule_core\common\utils\ContextHolder.java
+C:\LLPAY_WORK\Workspaces\Eclipse\SpringMVCModule\SpringMVCModule_core\src\main\java\org\SpringMVCModule_core\common\enums\InterfaceTypeEnum.java
+C:\LLPAY_WORK\Workspaces\Eclipse\SpringMVCModule\SpringMVCModule_core\src\main\java\org\SpringMVCModule_core\common\utils\LogUtil.java
+C:\LLPAY_WORK\Workspaces\Eclipse\SpringMVCModule\SpringMVCModule_core\src\main\java\org\SpringMVCModule_core\common\utils\AssertUtil.java
+C:\LLPAY_WORK\Workspaces\Eclipse\SpringMVCModule\SpringMVCModule_core\src\main\java\org\SpringMVCModule_core\common\annotation\Dubbo.java
+C:\LLPAY_WORK\Workspaces\Eclipse\SpringMVCModule\SpringMVCModule_core\src\main\java\org\SpringMVCModule_core\common\utils\ValidateBeanUtils.java

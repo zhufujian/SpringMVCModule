@@ -1,0 +1,13 @@
+org\SpringMVCModule_interface\domain\request\UserAddRequest.class
+org\SpringMVCModule_interface\enums\StateEnum.class
+org\SpringMVCModule_interface\domain\response\UserSingleQueryResponse.class
+org\SpringMVCModule_interface\validator\annotation\BaseElementsValidator.class
+org\SpringMVCModule_interface\validator\annotation\EnumValue$Validator.class
+org\SpringMVCModule_interface\enums\ResultCodeEnum.class
+org\SpringMVCModule_interface\domain\AbstractDomain.class
+org\SpringMVCModule_interface\validator\annotation\EnumValue.class
+org\SpringMVCModule_interface\domain\request\UserSingleQueryRequest.class
+org\SpringMVCModule_interface\service\IUserService.class
+org\SpringMVCModule_interface\domain\request\BaseRequest.class
+org\SpringMVCModule_interface\validator\BaseElementsValidatorImpl.class
+org\SpringMVCModule_interface\domain\response\BaseResponse.class

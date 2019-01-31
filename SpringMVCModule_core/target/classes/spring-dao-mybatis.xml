@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans>
+	<bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource"
+		destroy-method="close">
+		<property name="driverClassName" value="${jdbc.driver}" />
+		<property name="url" value="${jdbc.url}" />
+		<property name="username" value="${jdbc.username}" />
+		<property name="password" value="${jdbc.password}" />
+		<!-- 配置初始化大小、最小、最大 -->
+		<property name="initialSize" value="${jdbc.initialSize}"></property>
+		<property name="maxActive" value="${jdbc.maxActive}"></property>
+		<property name="maxIdle" value="${jdbc.maxIdle}"></property>
+		<property name="minIdle" value="${jdbc.minIdle}"></property>
+		<property name="maxWait" value="${jdbc.maxWait}"></property>
+		<property name="validationQuery" value="${jdbc.validationQuery}"></property>
+		<!-- 空闲时是否进行验证，检查对象是否有效，默认为false -->
+		<property name="testWhileIdle" value="${jdbc.testWhileIdle}"></property>
+		<property name="timeBetweenEvictionRunsMillis" value="${jdbc.timeBetweenEvictionRunsMillis}"></property>
+		<property name="minEvictableIdleTimeMillis" value="${jdbc.minEvictableIdleTimeMillis}"></property>
+		<property name="testOnBorrow" value="${jdbc.testOnBorrow}"></property>
+	</bean>
+	
+	<bean id="mySqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+		<property name="dataSource" ref="dataSource" />
+		<property name="mapperLocations"  value="classpath:org/SpringMVCModule_core/mapper/*.xml" />
+		<!-- <property name="typeAliasesPackage" value="org.SpringMVCModule_core.domain" /> -->
+	</bean>
+	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer" autowire="byName">
+		<property name="basePackage" value="org.SpringMVCModule_core.dao"></property>
+	<!-- <property name="sqlSessionFactory" value="sqlSessionFactory"></property>  -->
+		  <property name="sqlSessionFactoryBeanName" value="mySqlSessionFactory"></property>
+	</bean>
+
+</beans>

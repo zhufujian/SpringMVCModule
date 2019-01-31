@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+        <artifactId>SpringMVCModule</artifactId>
+        <groupId>com.study.demo</groupId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+
+  <artifactId>SpringMVCModule_deploy</artifactId>
+  <name>SpringMVCModule_deploy</name>
+
+
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+  </properties>
+	<dependencies>
+		<dependency>
+			 <groupId>com.study.demo</groupId>
+			<artifactId>SpringMVCModule_core</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+	</dependencies>
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-assembly-plugin</artifactId>
+				<configuration>
+					<finalName>SpringMVCModule_deploy</finalName>
+					<descriptors>
+						<descriptor>src/main/assembly/assembly.xml</descriptor>
+					</descriptors>
+				</configuration>
+				<executions>
+					<execution>
+						<id>make-assembly</id>
+						<phase>package</phase>
+						<goals>
+							<goal>single</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+	<profiles>
+		<profile>
+			<id>DEVELOP</id>
+			<properties>
+				<env>DEVELOP</env>
+			</properties>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
+		</profile>
+		<profile>
+			<id>PRODUCT</id>
+			<properties>
+				<env>PRODUCT</env>
+			</properties>
+		</profile>
+		<profile>
+			<id>UAT</id>
+			<properties>
+				<env>UAT</env>
+			</properties>
+		</profile>
+		<profile>
+			<id>TEST</id>
+			<properties>
+				<env>TEST</env>
+			</properties>
+		</profile>
+	</profiles>
+</project>

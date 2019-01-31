@@ -1,0 +1,3 @@
+#Dubbo Registry Cache
+#Thu Jan 31 18:47:47 CST 2019
+org.SpringMVCModule_interface.service.IUserService=empty\://10.20.82.22\:20880/org.SpringMVCModule_interface.service.IUserService?anyhost\=true&application\=SpringMVCModule&category\=configurators&check\=false&dubbo\=2.5.3&interface\=org.SpringMVCModule_interface.service.IUserService&methods\=selectByExample,selectByPrimaryKey,insert,selectByExampleWithRowbounds&organization\=org&owner\=xiaozhu&pid\=14808&retries\=0&side\=provider&timeout\=30000&timestamp\=1548931661826

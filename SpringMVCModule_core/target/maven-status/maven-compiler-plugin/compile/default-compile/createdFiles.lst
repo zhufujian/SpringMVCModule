@@ -1,0 +1,6 @@
+org\SpringMVCModule_core\domain\UserExample$Criterion.class
+org\SpringMVCModule_core\domain\UserExample$GeneratedCriteria.class
+org\SpringMVCModule_core\domain\UserExample.class
+org\SpringMVCModule_core\domain\User.class
+org\SpringMVCModule_core\domain\UserExample$Criteria.class
+org\SpringMVCModule_core\dao\UserMapper.class
